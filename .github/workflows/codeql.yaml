@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - "main"
+      - "feat/audio_transcriptions"
   pull_request:
     branches:
       - "main"
+      - "feat/audio_transcriptions"
   schedule:
     - cron: "16 11 * * 5"
 

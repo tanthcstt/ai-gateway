@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - "main"
+      - "feat/audio_transcriptions"
       # Release branches are like "release/v0.1", "release/v0.2", etc. where we backport the changes to non EOL versions.
       # The branch will be created from the main branch after the initial release tag is cut. For example, when we cut v0.8.0 release,
       # we will create a branch "release/v0.8" from the main branch. For rc release, we simply iterate on main branch.
@@ -14,6 +15,7 @@ on:
     branches:
       - "main"
       - "release/**"
+      - "feat/audio_transcriptions"
 
 concurrency:
   # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-using-concurrency-to-cancel-any-in-progress-job-or-run
